@@ -49,7 +49,7 @@ def get_tests(ctx, config, role, remote, testdir):
             run.Raw('&&'),
             'git',
             'archive',
-            '--remote=git://git.ceph.com/ceph.git',
+            '--remote=git://172.16.100.9/ceph.git',
             '%s:qa/workunits' % refspec,
             run.Raw('|'),
             'tar',
