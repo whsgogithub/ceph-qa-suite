@@ -60,7 +60,7 @@ def task(ctx, config):
                     'virtualenv', '{tdir}/virtualenv'.format(tdir=testdir),
                     run.Raw('&&'),
                     '{tdir}/virtualenv/bin/pip'.format(tdir=testdir),
-                    'install', 'cram',
+                    'install', '-i', 'http://172.16.100.5/simple', 'cram',
                     ],
                 )
             for test in tests:
