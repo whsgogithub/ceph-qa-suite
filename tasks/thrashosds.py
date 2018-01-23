@@ -176,5 +176,6 @@ def task(ctx, config):
         yield
     finally:
         log.info('joining thrashosds')
-        thrash_proc.do_join()
+        log.info('whsceshi....')
+        #thrash_proc.do_join()
         ctx.manager.wait_for_recovery(config.get('timeout', 360))
